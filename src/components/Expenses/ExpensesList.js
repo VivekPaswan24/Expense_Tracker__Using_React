@@ -2,7 +2,7 @@ import ExpenseItem from "./ExpenseItem";
 import './ExpensesList.css'
 const ExpensesList=(props)=>{
 
-    let msg=<h3 className="expenses-list__fallback">Only single Expense here. Please add more...</h3>
+    let msg=<h3 key={1} className="expenses-list__fallback">Only single Expense here. Please add more...</h3>
 
     let expensesContent=props.items.map((ele) => (
         <ExpenseItem
