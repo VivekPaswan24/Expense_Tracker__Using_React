@@ -34,7 +34,6 @@ const App = () => {
   const [expenses,setExpenses]=useState(DUMMY_EXPENSES);
 
   const addExpenseHandler=(expense)=>{
-    console.log(expense.date.getFullYear().toString())
     setExpenses(prevExpenses=>{
       return [expense,...prevExpenses]
     })
